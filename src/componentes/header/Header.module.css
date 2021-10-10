@@ -1,0 +1,80 @@
+.logo {
+  width: 100%;
+}
+.imagenUno {
+  width: 100px;
+}
+
+.rectangulo {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: 0px;
+  top: 105px;
+  background: rgba(229, 229, 229, 0.2);
+}
+.cuadrado {
+  position: absolute;
+  width: 20%;
+  height: 470px;
+  left: 65%;
+  top: 0px;
+  background: linear-gradient(
+    rgba(246, 164, 51, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+.cabecera {
+  height: 463px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagenDos {
+  width: 50%;
+  margin-top: -50px;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2c2c;
+}
+.InformacionReserva {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.InformacionReserva span {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .imagenDos {
+    width: 120%;
+    margin-top: 10px;
+  }
+  .InformacionReserva {
+    display: none;
+  }
+
+  .rectangulo {
+    height: 80px;
+    top: 80px;
+  }
+
+  .cuadrado {
+    display: none;
+  }
+}

@@ -1,0 +1,168 @@
+.contenedorCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: white;
+  width: 400px;
+  height: 850px;
+  padding: 20px;
+  margin: 40px 20px;
+  border-radius: 40px;
+  filter: drop-shadow(0px 6px 4px rgba(4, 4, 6, 0.2));
+}
+
+.contenedorCard img {
+  width: 100%;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 4px rgba(6, 6, 6, 0.4));
+}
+
+.contenedorCard .nombreHotel {
+  font-family: "Lato", sans-serif;
+  color: #2f2c2c;
+  font-size: 18px;
+  font-weight: 1000;
+  padding: 10px;
+}
+
+.ubicacion {
+  display: flex;
+  align-content: center;
+  color: #2b7a77;
+  padding: 10px 0px;
+  font-size: 15px;
+  display: flex;
+}
+
+.ubicacion .iconoMap {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.fechaEntradaSalida {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: white;
+  display: flex;
+}
+.fechaEntradaSalida h3 {
+  width: 100%;
+  background: #2b7a77;
+  padding: 15px 5px;
+  border-radius: 20px;
+  margin: 3px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+.fechaEntradaSalida h3 span {
+  font-weight: lighter;
+}
+
+.descripcion {
+  height: 200px;
+  overflow: auto;
+  filter: drop-shadow(0px 3px 4px rgba(6, 6, 6, 0.4));
+  margin: 20px 0px;
+}
+
+.descripcion p {
+  text-align: left;
+  letter-spacing: 0.5px;
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #2f2c2c;
+  padding: 20px;
+  border-radius: 10px 0px 0px 10px;
+  line-height: 25px;
+}
+.descripcion::-webkit-scrollbar {
+  width: 10px;
+  background: white;
+}
+.descripcion::-webkit-scrollbar-thumb {
+  width: 12px;
+  background: #f1701c;
+  border-radius: 10px;
+}
+.otraInformacion {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+}
+
+.otraInformacion .habitaciones {
+  display: flex;
+  align-items: center;
+  background: white;
+  width: 65%;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 4px rgba(6, 6, 6, 0.4));
+}
+.cuadradoHabitaciones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2b7a77;
+  width: 25%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+.habitaciones h3 {
+  color: #2f2c2c;
+  margin-left: 10px;
+}
+.cuadradoHabitaciones .IconBed {
+  font-size: 20px;
+}
+.otraInformacion .habitaciones .IconBed {
+  color: white;
+}
+
+.otraInformacion .precio {
+  align-content: center;
+  background: #2b7a77;
+  font-size: 30px;
+  width: 30%;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  color: white;
+  filter: drop-shadow(0px 3px 4px rgba(6, 6, 6, 0.4));
+}
+
+.precioOpaco {
+  color: rgba(0, 0, 0, 0.15);
+}
+button.reservar {
+  background: #f1701c;
+  padding: 20px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  letter-spacing: 5px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+button.reservar:hover {
+  background: linear-gradient(85.58deg, #f1701c 16.9%, #fa9406 63.17%);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .otraInformacion .precio {
+    font-size: 20px;
+  }
+}

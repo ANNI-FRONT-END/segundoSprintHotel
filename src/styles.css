@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fondoNaranja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 470px;
+  padding: 2% 5%;
+  background-image: linear-gradient(85.58deg, #f1701c 16.9%, #fa9406 63.17%);
+  mix-blend-mode: multiply;
+}
+
+.Holi {
+  height: 400px;
+  background: red;
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .fondoNaranja {
+    height: 600px;
+  }
+}
